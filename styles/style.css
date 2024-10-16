@@ -19,6 +19,7 @@
   min-block-size: 100dvb;
   font-family: var(--font-family);
   font-variation-settings: 'wdth' var(--font-weight-text);
+  font-variation-settings: 'wdth' var(--font-weight-title);
   background-color: var(--background-color);
   color: var(--accent-color);
   height: 100vh;
@@ -192,7 +193,6 @@ filter: grayscale(0.9);
   z-index: 1;
   top: 25px;
   right: 25px;
-  color: aliceblue;
   font-family: var(--font-family-accent);
   font-size: 14px;
   mix-blend-mode: hard-light;
