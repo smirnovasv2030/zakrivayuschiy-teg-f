@@ -18,8 +18,7 @@
   min-inline-size: 320px;
   min-block-size: 100dvb;
   font-family: var(--font-family);
-  font-variation-settings: 'wdth' var(--font-weight-text);
-  font-variation-settings: 'wdth' var(--font-weight-title);
+  font-variation-settings: "wght" var(--font-weight-text);
   background-color: var(--background-color);
   color: var(--accent-color);
   height: 100vh;
@@ -40,6 +39,7 @@
 
 .title {
   font-family: var(--font-family-accent);
+  font-variation-settings: "wght" var(--font-weight-title);
   font-size: clamp(3.063rem, 2.777rem + 1.429vw, 4.063rem);
   text-transform: uppercase;
   text-align: center;
