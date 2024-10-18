@@ -35,6 +35,11 @@
   transition: fill 0.3s linear;
 }
 
+.contour {
+  fill: var(--color-contour-like);
+  transition: fill 0.3s linear;
+}
+
 /*зажатие иконки*/
 
 .like-icon:active .core {

@@ -67,6 +67,8 @@
   text-transform: uppercase;
   padding: 0 0 10px 22px;
   position: relative;
+  opacity: 1;
+  transition: opacity 0.3s ease;
 }
 
 .theme-menu__button:hover {
@@ -119,6 +121,7 @@
 }
 
 .content {
+  display: grid;
   width: min(100%, 696px);
   background-color: transparent;
   z-index: 1;
@@ -272,9 +275,13 @@ filter: grayscale(0.9);
   position: relative;
 }
 
-.button {
+.button-active {
   border: 2px solid var(--accent-color);
   background-color: var(--background-color);
+}
+
+.button-active:hover {
+  cursor: pointer;
 }
 
 .button-active::before {
@@ -344,12 +351,14 @@ filter: grayscale(0.9);
 .dialog {
   width: 353px;
   padding: 30px;
+  row-gap: 30px;
+  column-gap: 20px;
+  border: 2px solid var(--accent-color);
+  background-color: var(--background-color);
 }
 
 .dialog[open] {
   display: grid;
-  row-gap: 30px;
-  column-gap: 20px;
 }
 
 .dialog::backdrop {
@@ -369,12 +378,16 @@ filter: grayscale(0.9);
 
 .dialog-button {
   font-family: var(--font-family-accent);
-  grid-column-start: 1;
-  grid-column-end: 3;
   line-height: 90%;
   text-transform: uppercase;
   min-height: 38px;
-  color: var(--accent-color);
+}
+
+.dialog__button-conteiner {
+  display: grid;
+  position: relative;
+  grid-column-start: 1;
+  grid-column-end: 3;
 }
 
 @media (width <= 376px) {
